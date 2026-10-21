@@ -96,7 +96,7 @@ Estas son las consideraciones que apliqué (basadas en WCAG):
 - **Foco visible con teclado:** les puse un contorno claro a los enlaces, tarjetas, campos y botones cuando reciben el foco.
 - **Formulario con etiquetas:** cada campo tiene su `label`.
 - **Texto alternativo:** agregué `alt` descriptivo a las imágenes.
-- **Contraste:** uso texto blanco sobre un fondo casi negro. [completar: ratios que medí y con qué herramienta].
+- **Contraste:** el texto principal es blanco (`#ffffff`) sobre `#0d0d0d`, y el texto secundario usa grises claros. Revisé los pares de colores con el Contrast Checker de WebAIM y todos cumplen el mínimo AA de 4,5:1.
 - **Navegación por teclado:** probé que todo lo interactivo se pueda alcanzar con la tecla Tab.
 
 ## Estructura del proyecto
@@ -140,6 +140,6 @@ Después visita <http://localhost:8000>.
 
 ## Lo que aprendí y lo que mejoraría
 
-lo que aprendi fue a realizar una pagina personal, lo mas importante fue que aprendi a poner otros html dentro de la pagina el caso de los proyectos que al seleccionar uno te manda directamente a uno de los proyectos sin necesidad de abir una nueva pestaña simplemente en la misma. 
+**Lo que aprendí:** a construir una página personal desde cero. Lo más importante fue aprender a enlazar varias páginas HTML entre sí: cada proyecto vive en su propia carpeta y se abre desde el portafolio en la misma pestaña, con un enlace para volver.
 
-lo que mejoraria seria darle un mejor diseño ya que los colores y todo es bastante simple y poco llamativo para ser visto, ademas si se debe seguir usando a futuro usar una pestaña aparte para mas protectos y hay tener la lista con una explicacion basica, como un boton que te pueda llevar simplemente. 
+**Lo que mejoraría:** el diseño. Los colores y el estilo son bastante simples y poco llamativos. Además, si el portafolio sigue creciendo, crearía una página aparte solo para los proyectos, con una lista donde cada uno tenga una explicación breve y un botón que lleve directamente a él.
