@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="es-CL">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tetris</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <main>
+        <a class="back-link" href="../../index.html">← Volver al inicio</a>
+        <h1>Tetris</h1>
+
+        <div class="marcador" aria-live="polite">
+            <p id="puntuacion">Puntuación: 0</p>
+            <p id="record">Récord: 0</p>
+        </div>
+
+        <canvas id="tablero" width="240" height="480" aria-label="Tablero de Tetris">
+            Tu navegador no admite canvas.
+        </canvas>
+
+        <p>Controles: A/D mover, S bajar, W girar, R reiniciar.</p>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#10131a">
+    <title>Memoria | Bayron Salgado</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+
+<body>
+    <main class="game">
+        <a class="back-link" href="../../index.html#proyectos">← Volver a proyectos</a>
+
+        <header class="game-header">
+            <p class="eyebrow">JUEGO DE MEMORIA</p>
+            <h1>Encuentra las parejas</h1>
+            <p class="intro">Da vuelta las cartas y encuentra todos los pares.</p>
+        </header>
+
+        <section class="game-panel" aria-label="Partida de memoria">
+            <div class="game-toolbar">
+                <div class="stat">
+                    <span class="stat-label">Movimientos</span>
+                    <strong id="moves">0</strong>
+                </div>
+                <div class="stat">
+                    <span class="stat-label">Tiempo</span>
+                    <strong id="timer" role="timer" aria-live="off">00:00</strong>
+                </div>
+                <button class="restart-button" id="restart" type="button">Nueva partida</button>
+            </div>
+
+            <div class="card-grid" id="card-grid" aria-label="Cartas del juego"></div>
+            <p class="game-message" id="game-message" role="status" aria-live="polite">
+                Elige una carta para comenzar.
+            </p>
+        </section>
+    </main>
+</body>
+
+</html>

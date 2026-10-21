@@ -1,0 +1,123 @@
+:root {
+  --fondo: #111827;
+  --superficie: #1f2937;
+  --texto: #f9fafb;
+  --texto-suave: #cbd5e1;
+  --acento: #fbbf24;
+  --borde: #4b5563;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  min-height: 100dvh;
+  margin: 0;
+  padding: 32px 16px;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  color: var(--texto);
+  background-color: var(--fondo);
+  background-image:
+    linear-gradient(rgba(255, 255, 255, 0.035) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(255, 255, 255, 0.035) 1px, transparent 1px);
+  background-size: 24px 24px;
+  font-family: "Trebuchet MS", sans-serif;
+}
+
+main {
+  width: min(100%, 360px);
+  text-align: center;
+}
+
+.back-link {
+  display: inline-block;
+  margin-bottom: 24px;
+  padding: 10px 14px;
+  border: 1px solid var(--borde);
+  border-radius: 6px;
+  background: var(--superficie);
+  color: var(--texto);
+  font-size: 0.9rem;
+  font-weight: 700;
+  text-decoration: none;
+  transition: border-color 150ms ease, background-color 150ms ease;
+}
+
+.back-link:hover {
+  border-color: var(--acento);
+  background: #293548;
+}
+
+.back-link:focus-visible {
+  outline: 2px solid var(--acento);
+  outline-offset: 3px;
+}
+
+h1 {
+  margin: 0 0 20px;
+  color: var(--acento);
+  font-size: 2.5rem;
+  letter-spacing: 0.08em;
+  line-height: 1;
+  text-transform: uppercase;
+}
+
+.marcador {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 10px;
+  margin-bottom: 16px;
+}
+
+.marcador p {
+  min-width: 0;
+  margin: 0;
+  padding: 10px 8px;
+  overflow-wrap: anywhere;
+  color: var(--texto-suave);
+  background: var(--superficie);
+  border: 1px solid var(--borde);
+  border-radius: 6px;
+  font-size: 0.9rem;
+  font-weight: 700;
+}
+
+canvas {
+  display: block;
+  width: min(240px, 100%);
+  height: auto;
+  margin: 0 auto;
+  background: #0b1220;
+  border: 3px solid var(--acento);
+  border-radius: 6px;
+  box-shadow: 0 12px 28px rgba(0, 0, 0, 0.35);
+}
+
+main > p {
+  margin: 16px auto 0;
+  color: var(--texto-suave);
+  font-size: 0.85rem;
+  line-height: 1.5;
+}
+
+@media (max-width: 360px) {
+  body {
+    padding: 24px 12px;
+  }
+
+  h1 {
+    font-size: 2rem;
+  }
+
+  .marcador {
+    gap: 6px;
+  }
+
+  .marcador p {
+    padding-inline: 4px;
+    font-size: 0.78rem;
+  }
+}

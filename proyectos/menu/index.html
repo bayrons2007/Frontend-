@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#f7f2e8">
+    <meta name="description" content="Menú digital de Miga y Miel, una cafetería de barrio.">
+    <title>Menú | Miga y Miel</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <header class="site-header">
+        <a class="brand" href="#inicio" aria-label="Miga y Miel, inicio">
+            <span class="brand-mark" aria-hidden="true">m</span>
+            <span>Miga <i>&</i> Miel</span>
+        </a>
+        <a class="header-link" href="../../index.html">← Volver al inicio</a>
+    </header>
+
+    <main>
+        <section class="hero" id="inicio">
+            <div class="hero-copy">
+                <p class="eyebrow"><span></span> CAFÉ DE BARRIO · HECHO CON CARIÑO</p>
+                <h1>Un buen día<br>empieza <em>aquí.</em></h1>
+                <p class="hero-description">Café recién molido, pan calentito y esas pausas que saben mejor sin apuro.</p>
+                <a class="hero-button" href="#menu">Descubre el menú <span aria-hidden="true">↘</span></a>
+                <p class="hero-note">Preparado fresco cada mañana</p>
+            </div>
+            <div class="hero-art" aria-label="Ilustración de una taza de café y un croissant" role="img">
+                <span class="sun-shape"></span>
+                <span class="coffee-cup" aria-hidden="true">☕</span>
+                <span class="croissant" aria-hidden="true">🥐</span>
+                <span class="art-caption">un momento<br>para ti</span>
+            </div>
+            <div class="hero-bottom">
+                <span>BUEN CAFÉ, BUENAS COSAS</span>
+                <span>DESLIZA PARA EXPLORAR ↓</span>
+            </div>
+        </section>
+
+        <section class="menu-section" id="menu">
+            <div class="section-heading">
+                <div>
+                    <p class="eyebrow">PREPARADO CON CALMA</p>
+                    <h2>La carta <em>de hoy.</em></h2>
+                </div>
+                <p>Ingredientes sencillos, sabores de temporada<br class="desktop-break"> y mucho cariño en cada receta.</p>
+            </div>
+
+            <div class="menu-toolbar">
+                <div class="filters" role="group" aria-label="Filtrar productos por categoría">
+                    <button class="filter-button is-active" type="button" data-filter="todos" aria-pressed="true">Todo</button>
+                    <button class="filter-button" type="button" data-filter="cafe" aria-pressed="false">Café & bebidas</button>
+                    <button class="filter-button" type="button" data-filter="brunch" aria-pressed="false">Brunch</button>
+                    <button class="filter-button" type="button" data-filter="dulce" aria-pressed="false">Algo dulce</button>
+                </div>
+                <p class="menu-count" id="menu-count" aria-live="polite">9 cosas ricas</p>
+            </div>
+
+            <div class="menu-grid" id="menu-grid">
+                <article class="menu-card" data-category="cafe">
+                    <div class="dish-art art-latte" aria-hidden="true"><span>☕</span></div>
+                    <div class="dish-info">
+                        <div class="dish-title"><h3>Latte de la casa</h3><span>$3.200</span></div>
+                        <p>Espresso doble, leche cremosa y un toque de canela.</p>
+                        <span class="dish-tag">EL FAVORITO</span>
+                    </div>
+                </article>
+                <article class="menu-card" data-category="cafe">
+                    <div class="dish-art art-cold" aria-hidden="true"><span>🧋</span></div>
+                    <div class="dish-info">
+                        <div class="dish-title"><h3>Cold brew cítrico</h3><span>$3.500</span></div>
+                        <p>Café infusionado en frío con naranja y mucho hielo.</p>
+                        <span class="dish-tag">FRESQUITO</span>
+                    </div>
+                </article>
+                <article class="menu-card" data-category="cafe">
+                    <div class="dish-art art-matcha" aria-hidden="true"><span>🍵</span></div>
+                    <div class="dish-info">
+                        <div class="dish-title"><h3>Matcha latte</h3><span>$3.600</span></div>
+                        <p>Matcha japonés batido al momento, frío o calentito.</p>
+                        <span class="dish-tag">VEGETARIANO</span>
+                    </div>
+                </article>
+                <article class="menu-card" data-category="brunch">
+                    <div class="dish-art art-toast" aria-hidden="true"><span>🥑</span></div>
+                    <div class="dish-info">
+                        <div class="dish-title"><h3>Tostada verde</h3><span>$5.900</span></div>
+                        <p>Pan de masa madre, palta, huevo pochado y semillas.</p>
+                        <span class="dish-tag">MÁS PEDIDO</span>
+                    </div>
+                </article>
+                <article class="menu-card" data-category="brunch">
+                    <div class="dish-art art-pancakes" aria-hidden="true"><span>🥞</span></div>
+                    <div class="dish-info">
+                        <div class="dish-title"><h3>Panqueques de domingo</h3><span>$5.500</span></div>
+                        <p>Fruta fresca, miel de la zona y crema batida.</p>
+                        <span class="dish-tag">DULCE & RICO</span>
+                    </div>
+                </article>
+                <article class="menu-card" data-category="brunch">
+                    <div class="dish-art art-sandwich" aria-hidden="true"><span>🥪</span></div>
+                    <div class="dish-info">
+                        <div class="dish-title"><h3>Sándwich del huerto</h3><span>$5.200</span></div>
+                        <p>Tomate asado, queso mantecoso, rúcula y pesto casero.</p>
+                        <span class="dish-tag">VEGETARIANO</span>
+                    </div>
+                </article>
+                <article class="menu-card" data-category="dulce">
+                    <div class="dish-art art-croissant" aria-hidden="true"><span>🥐</span></div>
+                    <div class="dish-info">
+                        <div class="dish-title"><h3>Croissant de mantequilla</h3><span>$2.400</span></div>
+                        <p>Hojaldrado, doradito y horneado durante la mañana.</p>
+                        <span class="dish-tag">RECIÉN HORNEADO</span>
+                    </div>
+                </article>
+                <article class="menu-card" data-category="dulce">
+                    <div class="dish-art art-cake" aria-hidden="true"><span>🍰</span></div>
+                    <div class="dish-info">
+                        <div class="dish-title"><h3>Queque de limón</h3><span>$2.800</span></div>
+                        <p>Suave, húmedo y con glaseado de limón natural.</p>
+                        <span class="dish-tag">RECETA CASERA</span>
+                    </div>
+                </article>
+                <article class="menu-card" data-category="dulce">
+                    <div class="dish-art art-cookie" aria-hidden="true"><span>🍪</span></div>
+                    <div class="dish-info">
+                        <div class="dish-title"><h3>Galleta chocolate</h3><span>$1.900</span></div>
+                        <p>Galleta tibia con chocolate amargo y sal de mar.</p>
+                        <span class="dish-tag">UN CLÁSICO</span>
+                    </div>
+                </article>
+            </div>
+            <p class="menu-footnote">Los precios están expresados en pesos chilenos. Algunas opciones pueden variar según disponibilidad.</p>
+        </section>
+
+        <section class="closing-note">
+            <span aria-hidden="true">✳</span>
+            <p>Tu pausa favorita<br><em>te está esperando.</em></p>
+            <span aria-hidden="true">✳</span>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <a class="brand footer-brand" href="#inicio"><span class="brand-mark" aria-hidden="true">m</span><span>Miga <i>&</i> Miel</span></a>
+        <p>Un concepto de cafetería · Menú de muestra</p>
+        <a href="../../index.html#proyectos">Volver al portafolio ↑</a>
+    </footer>
+</body>
+</html>
