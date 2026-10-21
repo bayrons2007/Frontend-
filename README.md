@@ -33,7 +33,7 @@ Mi objetivo es que quien entre entienda mi perfil en segundos y pueda comprobarl
 
 | Escritorio | Tablet | Móvil |
 |---|---|---|
-| ![Inicio en escritorio](assets/img/capturas/inicio-escritorio.png) | ![Inicio en tablet](assets/img/capturas/inicio-tablet.png) | ![Inicio en móvil](assets/img/capturas/inicio-movil.png) |
+| ![Inicio en escritorio](assets/img/capturas/inicio.png) | ![Inicio en tablet](assets/img/capturas/tablet.png) | ![Inicio en móvil](assets/img/capturas/movil.png) |
 
 ![Sección de proyectos](assets/img/capturas/proyectos.png)
 
